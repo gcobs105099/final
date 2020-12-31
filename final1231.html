@@ -1,0 +1,3060 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.autoInitializePage = false;
+      $.mobile.hashListeningEnabled = false;
+    });
+
+    function mobileInitPage() {
+      $.mobile.hashListeningEnabled = true;
+      $.mobile.initializePage();
+    };
+  </script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- GK Loader use RequireJS to load module -->
+  <script src="http://requirejs.org/docs/release/2.1.11/minified/require.js"></script>
+  <!--Plug in GK-->
+  <script src="http://jqmdesigner.appspot.com/components/jquery.gk/jquery.gk.min.js"></script>
+  <!-- Load GK components -->
+  <script components="http://jqmdesigner.appspot.com/components/gk-jquerymobile/content.html,http://jqmdesigner.appspot.com/components/gk-ext/gk-text.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/grid.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/page.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/button.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/footer.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/block.html"
+  callback="mobileInitPage" src="http://jqmdesigner.appspot.com/components/gk-loader/gk-loader.js"></script>
+  <title>EZo App</title>
+</head>
+
+<body gk-app>
+  <!-- Page: home  -->
+  <div is="page" id="home" data-role="page">
+    <div is="content" role="main" class="ui-content">
+      <h1 is="gk-text" style="text-align:center;">三番街美食</h1>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#page1"><img is="dragable" src="https://gcobs105099.github.io/final/logo/1.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">焗的飽</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <a href="#page6"><img is="dragable" src="https://gcobs105099.github.io/final/logo/2.PNG" style="width:70px; margin-left:10px;"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">桐話餐飲</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <a href="#page11"><img is="dragable" src="https://gcobs105099.github.io/final/logo/3.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">紅林</h5>
+        </div>
+      </div>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#page16"><img is="dragable" src="https://gcobs105099.github.io/final/logo/4.PNG" style="width:70px; margin:3px 10px -3px 12px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">勤美麵食館</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <a href="#page21"><img is="dragable" src="https://gcobs105099.github.io/final/logo/5.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">雙醬咖哩</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <a href="#page26"><img is="dragable" src="https://gcobs105099.github.io/final/logo/6.PNG" style="width:70px; margin-left:10px;"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">勤玉抓餅舖</h5>
+        </div>
+      </div>
+	        <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#page31"><img is="dragable" src="https://gcobs105099.github.io/final/logo/7.PNG" style="width:70px; margin:0 15px 0 12px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">熊愛洋食堂</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <a href="#page36"><img is="dragable" src="https://gcobs105099.github.io/final/logo/8.PNG" style="width:70px; margin-left:12px;"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">傑克與魔豆</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <a href="#page41"><img is="dragable" src="https://gcobs105099.github.io/final/logo/9.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">94狂現炒</h5>
+        </div>
+		</div>
+	  <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#page46"><img is="dragable" src="https://gcobs105099.github.io/final/logo/10.PNG" style="width:70px; margin:3px 10px -3px 12px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">大吉拉麵</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <a href="#page51"><img is="dragable" src="https://gcobs105099.github.io/final/logo/11.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">家香味</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <a href="#page56"><img is="dragable" src="https://gcobs105099.github.io/final/logo/12.PNG" style="width:70px; margin-left:10px;"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">勤益牛肉麵</h5>
+        </div>
+      </div>
+	  <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#page61"><img is="dragable" src="https://gcobs105099.github.io/final/logo/13.PNG" style="width:70px; margin:3px 10px -3px 12px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">正益蔬食</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <a href="#page66"><img is="dragable" src="https://gcobs105099.github.io/final/logo/14.PNG" style="width:60px; margin:5px 15px 5px 18px"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">金德川日式蓋飯</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <a href="#page71"><img is="dragable" src="https://gcobs105099.github.io/final/logo/15.PNG" style="width:70px; margin-left:10px;"></a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">干鍋</h5>
+        </div>
+      </div>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+    <h3>20210104期末報告</h3>
+    </div>
+  </div>
+  
+  <!-- 焗的飽資訊 -->
+  <div data-role="page" data-control-title="detail1" id="page1">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door1.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    焗的飽
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page2" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page4" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page5" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page2">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page1" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    焗的飽
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 320px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page3">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page1" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    焗的飽
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width:640px; height:293px" src="https://gcobs105099.github.io/final/meal/meal1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page4">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page1" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    焗的飽
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page5">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#page6" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page1" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    焗的飽
+                </strong>
+            </h1>
+        </div>
+        
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.5508033494376!2d120.73277052279461!3d24.143209622576958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f8f1ec88911fef6!2z5rC457a65b2x5Y2w5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1609405895571!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+  </div>
+  
+  <!-- 桐話餐飲資訊 -->
+  <div data-role="page" data-control-title="detail1" id="page6">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 364px" src="https://gcobs105099.github.io/final/door/door2.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page7" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page8" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page9" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page10" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page7">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page6" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 364px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu2.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page8">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page6" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal2-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page9">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page6" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page10">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page6" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55077074332846!2d120.73279041216708!3d24.143227939186676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8da38d69dbdd42e0!2z5qGQ6Kmx6JuL5YyF6aOv!5e0!3m2!1szh-TW!2stw!4v1609413992032!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 紅林資訊 -->
+<div data-role="page" data-control-title="detail1" id="page11">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <!-- <div style="text-align:center" data-controltype="image"> -->
+            <!-- <img style="width: 640px; height: 364px" src="https://gcobs105099.github.io/final/door/door2.jpg"> -->
+        <!-- </div> -->
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    紅林
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page12" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page13" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page14" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page15" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page12">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page11" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    紅林
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 430px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu3-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page13">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page11" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    紅林
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 475px" src="https://gcobs105099.github.io/final/meal/meal3.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page14">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page11" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    紅林
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page15">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+</h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page11" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    紅林
+                </strong>
+            </h1>
+        </div>
+        
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55077074332846!2d120.73279041216708!3d24.143227939186676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f8f1ec88911fef6!2z5rC457a65b2x5Y2w5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1609414020529!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		 </iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 勤美麵食館資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page16">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door4.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    桐話餐飲
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page17" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page18" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page19" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page20" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page17">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page16" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤美麵食館
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 320px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu4.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page18">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page16" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤美麵食館
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal4.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page19">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page16" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤美麵食館
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page20">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page16" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤美麵食館
+                </strong>
+            </h1>
+        </div>
+        
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55077074332846!2d120.73279041216708!3d24.143227939186676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7a32ff299a7bd8!2z5Yuk576O6bq16aOf6aSoKOWkquW5s-eJm-iCiem6te-8jOm6u-mGrOm6teOAgemkm-mjqSk!5e0!3m2!1szh-TW!2stw!4v1609413956500!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 雙醬咖哩資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page21">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 430px" src="https://gcobs105099.github.io/final/door/door5.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    雙醬咖哩
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page22" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page23" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page24" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page25" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page22">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page21" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    雙醬咖哩
+                </strong>
+            </h1>
+        </div>
+        <!-- <div style="text-align:center" data-controltype="image"> -->
+            <!-- <img style="width: 364px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu2.jpg"> -->
+        <!-- </div> -->
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page23">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page21" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    雙醬咖哩
+                </strong>
+            </h1>
+        </div>
+        <!-- <div style="text-align:center" data-controltype="image"> -->
+            <!-- <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal2-1.jpg"> -->
+        <!-- </div> -->
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page24">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page21" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    雙醬咖哩
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page25">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page21" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    雙醬咖哩
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55082520633823!2d120.73279108271932!3d24.14319734436995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f0dfc99b%3A0x418d28265fcb7708!2z6ZuZ6Yas5ZKW5ZOp!5e0!3m2!1szh-TW!2stw!4v1609414052803!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 勤玉抓餅舖資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page26">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 640px" src="https://gcobs105099.github.io/final/door/door6.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤玉抓餅舖
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page27" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page28" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page29" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page30" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page27">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page26" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤玉抓餅舖
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 544px; height: 731px" src="https://gcobs105099.github.io/final/menu/menu6.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page28">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page26" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤玉抓餅舖
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 554px; height: 739px" src="https://gcobs105099.github.io/final/meal/meal6.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page29">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page26" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤玉抓餅舖
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page30">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page26" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤玉抓餅舖
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.4066692712925!2d120.73218965785937!3d24.143192596099315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34692328bf22db81%3A0x654d0384a3ca8181!2z5Yuk546J6JSl5oqT6aSF!5e0!3m2!1szh-TW!2stw!4v1609414317190!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 熊愛洋食堂資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page31">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/door/door7.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    熊愛洋食堂
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page32" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page33" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page34" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page35" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page32">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page31" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    熊愛洋食堂
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu7.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page33">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page31" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    熊愛洋食堂
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal7.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page34">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page31" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    熊愛洋食堂
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page35>
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page31" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    熊愛洋食堂
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.405178225447!2d120.73210955785936!3d24.14329729609932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f41de04f%3A0x26ea08b54faf6845!2z54aK5oSb5rSL6aOf5aCC!5e0!3m2!1szh-TW!2stw!4v1609414362026!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 傑克與魔豆資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page36">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+     </a>
+    </div>
+    <div role="main" class="ui-content">
+        <!-- <div style="text-align:center" data-controltype="image"> -->
+            <!-- <img style="width: 640px; height: 364px" src="https://gcobs105099.github.io/final/door/door2.jpg"> -->
+        <!-- </div> -->
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    傑克與魔豆
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page37" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page38" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page39" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page40" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page37">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page36" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    傑克與魔豆
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 522px; height: 784px" src="https://gcobs105099.github.io/final/menu/menu8-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page38">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page36" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    傑克與魔豆
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 554px; height: 739px" src="https://gcobs105099.github.io/final/meal/meal8-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page39">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page36" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    傑克與魔豆
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page40">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page36" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    傑克與魔豆
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55056415404906!2d120.73343757314977!3d24.14334399122125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2ed990a25%3A0x5612418835f83e87!2z5YKR5YWL6IiH6a2U6LGG!5e0!3m2!1szh-TW!2stw!4v1609414188268!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 94狂現炒資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page41">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door9.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    94狂現炒
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page42" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page43" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page44" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page45" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page42">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page41" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    94狂現炒
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 364px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu9.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page43">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page41" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    94狂現炒
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 360px; height: 204px" src="https://gcobs105099.github.io/final/meal/meal9-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page44">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page41" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    94狂現炒
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page45">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page41" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    94狂現炒
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55026872157134!2d120.73280357265418!3d24.14350995022927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x771faff1ba7e3ebb!2z5bed5ZGz5bCP6aSo!5e0!3m2!1szh-TW!2stw!4v1609414599363!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 大吉拉麵資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page46">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door10.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    大吉拉麵
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page47" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page48" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page49" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page50" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page47">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page46" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    大吉拉麵
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu10.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page48">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page46" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    大吉拉麵
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal10.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page49">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page46" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    大吉拉麵
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page50">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page46" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    大吉拉麵
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.4032186373274!2d120.73174255785932!3d24.143434896099247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34692373535546af%3A0x60c74319ac68cd55!2z5aSn5ZCJ5ouJ6bq1IOWLpOebiuW6lw!5e0!3m2!1szh-TW!2stw!4v1609414416330!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 家香味資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page51">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door11.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    家香味
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page52" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page53" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page54" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page55" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page52">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page51" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    家香味
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu11.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page53">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page51" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    家香味
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal11.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page54">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page51" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    家香味
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page55">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page51" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    家香味
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1820.4032186373274!2d120.73174255785932!3d24.143434896099247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34692373535546af%3A0x60c74319ac68cd55!2z5aSn5ZCJ5ouJ6bq1IOWLpOebiuW6lw!5e0!3m2!1szh-TW!2stw!4v1609414416330!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 勤益牛肉麵資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page56">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door12.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤益牛肉麵
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page57" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page58" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page59" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page60" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page57">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page56" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤益牛肉麵
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 364px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu12.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page58">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page56" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤益牛肉麵
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal12.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page59">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page56" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤益牛肉麵
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page60">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page56" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    勤益牛肉麵
+                </strong>
+            </h1>
+        </div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55024252742518!2d120.73306468776717!3d24.143524664722598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f5ed8cef%3A0x5334fdfd78c3b623!2z6b6N6ZaA54--54KSIOWLpOebiuenkeWkpw!5e0!3m2!1szh-TW!2stw!4v1609414688467!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+	   </iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 正益蔬食資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page61">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door13.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    正益蔬食
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page62" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page63" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page64" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page65" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page62">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page61" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    正益蔬食
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/menu/menu13.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page63">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page61" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    正益蔬食
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal3.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page64">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page61" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    正益蔬食
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page65">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page61" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    正益蔬食
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55037198443515!2d120.73278406374607!3d24.14345194250258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f9d155ef%3A0x14bddf5f403a20f7!2z5rKz6aas5b2x5Y2w!5e0!3m2!1szh-TW!2stw!4v1609414544267!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 金德川日式蓋飯資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page66">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/door/door14.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    金德川日式蓋飯
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page67" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page68" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page69" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page70" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page67">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page66" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    金德川日式蓋飯
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 364px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu14.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page68">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page66" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    金德川日式蓋飯
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 554px; height: 739px" src="https://gcobs105099.github.io/final/meal/meal14-1.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page69">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page66" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    金德川日式蓋飯
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page70">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page66" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    金德川日式蓋飯
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55037198443515!2d120.73278406374607!3d24.14345194250258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f9d155ef%3A0x14bddf5f403a20f7!2z5rKz6aas5b2x5Y2w!5e0!3m2!1szh-TW!2stw!4v1609414544267!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- 干鍋資訊 -->
+
+ <div data-role="page" data-control-title="detail1" id="page71">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            餐廳介紹
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#home" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 480px; height: 640px" src="https://gcobs105099.github.io/final/door/door15.jpg">
+        </div>
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    干鍋
+                </strong>
+            </h1>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                資訊
+            </li>
+            <li data-theme="a">
+                <a href="#page72" data-transition="slide">
+                    菜單
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page73" data-transition="slide">
+                    菜色
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page74" data-transition="slide">
+                    評論
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page75" data-transition="slide">
+                    地點
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="menu1" id="page72">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜單
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page71" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    干鍋
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 373px; height: 640px" src="https://gcobs105099.github.io/final/menu/menu15.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="meal1" id="page73">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            菜色
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page71" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    干鍋
+                </strong>
+            </h1>
+        </div>
+        <div style="text-align:center" data-controltype="image">
+            <img style="width: 640px; height: 480px" src="https://gcobs105099.github.io/final/meal/meal15.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="evaluation1" id="page74">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            評論
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page71" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    干鍋
+                </strong>
+            </h1>
+        </div>
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    評論:
+                </b>
+            </p>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-control-title="location1" id="page75">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            地點
+        </h1>
+        <a href="#home" class="ui-btn ui-btn-right">
+            回首頁
+        </a>
+        <a href="#page71" class="ui-btn ui-btn-left">
+            上一頁
+        </a>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h1>
+                <strong>
+                    干鍋
+                </strong>
+            </h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227.55037198443515!2d120.73278406374607!3d24.14345194250258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922a2f9d155ef%3A0x14bddf5f403a20f7!2z5rKz6aas5b2x5Y2w!5e0!3m2!1szh-TW!2stw!4v1609414544267!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+		</iframe>
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-theme="b" data-role="footer" data-position="fixed">
+            <h3 class="ui-title">
+                20210104期末報告
+            </h3>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
